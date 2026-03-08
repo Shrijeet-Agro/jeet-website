@@ -1,0 +1,95 @@
+/* --- Global Styles --- */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; padding: 0; margin: 0; }
+
+/* --- Top Information Bar --- */
+.top-info-bar { background-color: #2b7a0b; color: white; padding: 10px 50px; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; }
+.top-contact-info a { color: white; margin-right: 20px; }
+.top-actions { display: flex; align-items: center; gap: 15px; }
+.search-bar input { padding: 5px 10px; border: none; border-radius: 3px; }
+#google_translate_element { margin-left: 10px; }
+
+/* --- Main Header & Navigation --- */
+header { background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+.main-header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; }
+.logo-container img { height: 70px; }
+
+/* Product Category Navigation WITH DROPDOWN */
+.product-nav { flex-grow: 1; margin-left: 30px; }
+.product-nav ul.main-menu { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+.product-nav ul.main-menu > li { position: relative; padding: 10px 0; }
+.product-nav ul.main-menu > li > a { font-weight: 600; font-size: 1.05rem; color: #333; transition: all 0.3s ease; }
+.product-nav ul.main-menu > li > a:hover { color: #2b7a0b; }
+
+ /* Dropdown Menu Styles (Updated for long lists) */
+.dropdown { 
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    background-color: #fff; 
+    min-width: 250px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+    border-radius: 5px; 
+    padding: 10px 0; 
+    z-index: 1001; 
+    border-top: 3px solid #2b7a0b;
+    max-height: 400px; /* Limits the height */
+    overflow-y: auto; /* Adds a vertical scrollbar */
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Other Page Links */
+.secondary-nav ul { display: flex; gap: 20px; }
+.secondary-nav ul li a { font-weight: 500; color: #666; }
+.secondary-nav ul li a:hover { color: #2b7a0b; }
+
+/* --- Page Content Layout --- */
+.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+h1, h2 { text-align: center; color: #2b7a0b; }
+
+/* --- About Us Introduction Section --- */
+.about-section { background-color: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 50px; text-align: center; border-left: 5px solid #2b7a0b; }
+.about-section h2 { margin-top: 0; font-size: 2rem; color: #1b5e20; }
+.about-section p { font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 900px; margin: 0 auto; }
+
+/* --- Home Page Product Boxes --- */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 20px; }
+.product-box { border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; color: white; text-align: center; padding-bottom: 20px; cursor: pointer; display: block; }
+.product-box:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+.product-box img { width: 100%; height: 180px; object-fit: cover; border-bottom: 4px solid rgba(0,0,0,0.1); }
+.product-box h3 { font-size: 1.5rem; margin: 20px 0; }
+
+/* --- Category Page: Individual Product Grid --- */
+.category-product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; padding: 20px 0; }
+.single-product-card { background: #fff; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); overflow: hidden; text-align: center; transition: all 0.3s ease; cursor: pointer; display: flex; flex-direction: column; }
+.single-product-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.15); transform: translateY(-5px); border: 1px solid #2b7a0b; }
+.single-product-card img { width: 100%; height: 150px; object-fit: cover; }
+.single-product-card h4 { padding: 15px 10px 5px 10px; margin: 0; color: #333; font-size: 1.1rem; }
+.product-desc { padding: 0 15px 15px 15px; margin: 0; font-size: 0.85rem; color: #777; flex-grow: 1; }
+
+/* --- WhatsApp Floating Icon --- */
+.whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 30px; left: 30px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); z-index: 1000; display: flex; align-items: center; justify-content: center; transition: transform 0.3s ease; }
+.whatsapp-float:hover { transform: scale(1.1); background-color: #128C7E; }
+.whatsapp-float svg { width: 35px; height: 35px; fill: white; }
+
+/* --- Modal & Footer (Keep remaining CSS same as before) --- */
+.modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
+.modal-content { background-color: #fefefe; margin: auto; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); width: 90%; max-width: 500px; position: relative; animation: slideDown 0.4s ease; }
+@keyframes slideDown { from { top: -100px; opacity: 0; } to { top: 0; opacity: 1; } }
+.close-btn { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; position: absolute; top: 15px; right: 20px; }
+.close-btn:hover { color: #000; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; text-align: left; }
+.form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; box-sizing: border-box; }
+.submit-btn { width: 100%; padding: 12px; background-color: #2b7a0b; color: white; border: none; border-radius: 5px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background-color 0.3s; }
+.submit-btn:hover { background-color: #236309; }
+
+footer { background-color: #222; color: #ddd; padding: 50px 20px; text-align: center; margin-top: 50px; }
+.footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: left; }
+.footer-section h3 { color: #fff; border-bottom: 2px solid #2b7a0b; padding-bottom: 10px; margin-bottom: 20px; }
+.footer-section p, .footer-section li a { color: #bbb; line-height: 1.8; }
+.footer-section ul li { margin-bottom: 10px; }
+.footer-section a:hover { color: #2b7a0b; }
+.footer-bottom { margin-top: 40px; border-top: 1px solid #444; padding-top: 20px; font-size: 0.9rem; }

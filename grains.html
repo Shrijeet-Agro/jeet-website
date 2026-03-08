@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grains & Flours | Shri Jeet Corporation</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+    <a href="https://wa.me/919812312569" class="whatsapp-float" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-23.1-115-65.1-157zM223.9 414.8c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.1l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+
+    <div class="top-info-bar">
+        <div class="top-contact-info">
+            <span>📞 +91 9812312569 | +91 8683090656</span>
+            <span style="margin: 0 15px;">|</span>
+            <span>✉️ shrijeetcorporation1@gmail.com</span>
+        </div>
+        <div class="top-actions">
+            <div class="search-bar"><input type="text" placeholder="Search products..."></div>
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="main-header-content">
+            <div class="logo-container"><a href="index.html"><img src="sjc-logo.png" alt="Shri Jeet Corporation Logo"></a></div>
+            <nav class="product-nav">
+                <ul class="main-menu">
+                    <li>
+                        <a href="grains.html" style="color: #2b7a0b;">Grains &#9662;</a>
+                        <ul class="dropdown">
+                            <li><a href="grains.html">Maize</a></li>
+                            <li><a href="grains.html">Wheat</a></li>
+                            <li><a href="grains.html">Millet</a></li>
+                            <li><a href="grains.html">Oats</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="spices.html">Spices &#9662;</a>
+                        <ul class="dropdown">
+                            <li><a href="spices.html">Asafoetida</a></li>
+                            <li><a href="spices.html">Cumin Seed (Jeera)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="oilseeds.html">Oil Seeds</a></li>
+                    <li><a href="fruits-veg.html">Fruits & Veg</a></li>
+                    <li><a href="forage.html">Forage Seeds</a></li>
+                </ul>
+            </nav>
+            <nav class="secondary-nav">
+                <ul>
+                    <li><a href="blog.html">Blog/News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Grains & Flours</h1>
+        <p style="text-align: center; margin-bottom: 30px;">Click anywhere on a product box to send an enquiry.</p>
+
+        <div class="category-product-grid">
+            
+            <div class="single-product-card" onclick="openEnquiryModal('Maize')">
+                <img src="maize.jpg" alt="Maize">
+                <h4>Maize</h4>
+                <p class="product-desc">High-quality bulk maize suitable for both human consumption and industrial processing.</p>
+            </div>
+            
+            <div class="single-product-card" onclick="openEnquiryModal('Wheat')">
+                <img src="wheat.jpg" alt="Wheat">
+                <h4>Wheat</h4>
+                <p class="product-desc">Premium whole wheat grains sourced directly from top agricultural farms.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Millet')">
+                <img src="millet.jpg" alt="Millet">
+                <h4>Millet</h4>
+                <p class="product-desc">Nutrient-dense millet grains, perfect for healthy diets and bulk export.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Oats')">
+                <img src="oats.jpg" alt="Oats">
+                <h4>Oats</h4>
+                <p class="product-desc">Clean, wholesome oats available in large quantities for commercial buyers.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Paddy')">
+                <img src="paddy.jpg" alt="Paddy">
+                <h4>Paddy</h4>
+                <p class="product-desc">Unprocessed high-yield paddy grains suitable for large-scale milling.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Barley')">
+                <img src="barley.jpg" alt="Barley">
+                <h4>Barley</h4>
+                <p class="product-desc">Versatile barley grains ideal for food, beverage, and animal feed industries.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Amarnath')">
+                <img src="amarnath.jpg" alt="Amarnath">
+                <h4>Amarnath</h4>
+                <p class="product-desc">Premium gluten-free Amaranth grains packed with protein and essential minerals.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Chickpeas (Desi Chana)')">
+                <img src="chana.jpg" alt="Chickpeas">
+                <h4>Chickpeas (Desi Chana)</h4>
+                <p class="product-desc">Nutritious Desi Chana grains sourced from reliable Indian agricultural regions.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Buckwheat')">
+                <img src="buckwheat.jpg" alt="Buckwheat">
+                <h4>Buckwheat</h4>
+                <p class="product-desc">Healthy Buckwheat seeds (Kuttu) ideal for processing and specialty diets.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Chia Seeds')">
+                <img src="chia.jpg" alt="Chia Seeds">
+                <h4>Chia Seeds</h4>
+                <p class="product-desc">High-fiber superfood chia seeds available for bulk export.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Drum Wheat')">
+                <img src="drum-wheat.jpg" alt="Drum Wheat">
+                <h4>Drum Wheat</h4>
+                <p class="product-desc">Premium Drum Wheat variety, known for its high protein content and quality.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Groundnut')">
+                <img src="groundnut.jpg" alt="Groundnut">
+                <h4>Groundnut</h4>
+                <p class="product-desc">Quality groundnuts (peanuts) available for oil extraction or direct consumption.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Rye Grain')">
+                <img src="rye.jpg" alt="Rye Grain">
+                <h4>Rye Grain</h4>
+                <p class="product-desc">Traditional rye grains suitable for milling and industrial use.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Quinoa')">
+                <img src="quinoa.jpg" alt="Quinoa">
+                <h4>Quinoa</h4>
+                <p class="product-desc">Premium quality quinoa grains, an excellent source of plant-based protein.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Buckwheat Flour')">
+                <img src="buckwheat-flour.jpg" alt="Buckwheat Flour">
+                <h4>Buckwheat Flour</h4>
+                <p class="product-desc">Fine buckwheat flour, ideal for gluten-free baking and specialty cuisines.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Corn Flour')">
+                <img src="corn-flour.jpg" alt="Corn Flour">
+                <h4>Corn Flour</h4>
+                <p class="product-desc">Versatile corn flour for culinary thickening and food manufacturing.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Chickpeas Flour (Besan)')">
+                <img src="besan.jpg" alt="Chickpeas Flour (Besan)">
+                <h4>Chickpeas Flour (Besan)</h4>
+                <p class="product-desc">Pure and high-quality Besan for commercial and household cooking.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Potato Flour')">
+                <img src="potato-flour.jpg" alt="Potato Flour">
+                <h4>Potato Flour</h4>
+                <p class="product-desc">Dehydrated potato flour used as a thickener and in specialized baking.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Rava Flour')">
+                <img src="rava.jpg" alt="Rava Flour">
+                <h4>Rava Flour</h4>
+                <p class="product-desc">Quality rava flour perfect for a variety of breakfast and snack items.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Refined Wheat Flour (Maida)')">
+                <img src="maida.jpg" alt="Refined Wheat Flour (Maida)">
+                <h4>Refined Wheat Flour (Maida)</h4>
+                <p class="product-desc">Fine, white wheat flour for bakeries and commercial food production.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Rice Flour')">
+                <img src="rice-flour.jpg" alt="Rice Flour">
+                <h4>Rice Flour</h4>
+                <p class="product-desc">Clean rice flour suitable for various global culinary applications.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Semolina Flour (Suji)')">
+                <img src="suji.jpg" alt="Semolian Flour (Suji)">
+                <h4>Semolian Flour (Suji)</h4>
+                <p class="product-desc">Coarse semolina for traditional and modern recipes.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Wheat Flour')">
+                <img src="wheat-flour.jpg" alt="Wheat Flour">
+                <h4>Wheat Flour</h4>
+                <p class="product-desc">Wholesome wheat flour processed for freshness and nutritional value.</p>
+            </div>
+
+            <div class="single-product-card" onclick="openEnquiryModal('Legumes Flour')">
+                <img src="legume-flour.jpg" alt="Legumes Flour">
+                <h4>Legumes Flour</h4>
+                <p class="product-desc">Highly nutritious flour made from premium quality assorted legumes.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="enquiryModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Product Enquiry</h2>
+            <form id="enquiry-form">
+                <div class="form-group"><label for="product-name">Product:</label><input type="text" id="product-name" name="product-name" readonly></div>
+                <div class="form-group"><label for="name">Your Name:</label><input type="text" id="name" name="name" required></div>
+                <div class="form-group"><label for="email">Your Email:</label><input type="email" id="email" name="email" required></div>
+                <div class="form-group"><label for="message">Message / Quantity Required:</label><textarea id="message" name="message" rows="4" required></textarea></div>
+                <button type="submit" class="submit-btn">Send Enquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> +91 9812312569</p>
+                <p><strong>Phone:</strong> +91 8683090656</p>
+                <p><strong>Email:</strong> shrijeetcorporation1@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Location</h3>
+                <p>Shri Jeet Corporation<br>India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Products | Shri Jeet Corporation</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+    <div class="top-info-bar">
+        <div class="top-contact-info">
+            <span>📞 +91 9812312569 | +91 8683090656</span>
+            <span style="margin: 0 15px;">|</span>
+            <span>✉️ shrijeetcorporation1@gmail.com</span>
+        </div>
+        <div class="top-actions">
+            <div class="search-bar"><input type="text" placeholder="Search products..."></div>
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+    <header>
+        <div class="main-header-content">
+            <div class="logo-container"><a href="index.html"><img src="sjc-logo.png" alt="Shri Jeet Corporation Logo"></a></div>
+            <nav class="product-nav">
+                <ul>
+                    <li><a href="grains.html">Grains</a></li>
+                    <li><a href="spices.html">Herbs & Spices</a></li>
+                    <li><a href="other.html" class="active">Other Products</a></li>
+                </ul>
+            </nav>
+            <nav class="secondary-nav">
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Other Products [cite: 209]</h1>
+        <p style="text-align: center;">Click on any product image to send an enquiry.</p>
+
+        <div class="category-product-grid">
+            <div class="single-product-card">
+                <img src="sugar.jpg" alt="Sugar" onclick="openEnquiryModal('Sugar')">
+                <h4>Sugar [cite: 210]</h4>
+            </div>
+            <div class="single-product-card">
+                <img src="jaggery.jpg" alt="Jaggery" onclick="openEnquiryModal('Jaggery')">
+                <h4>Jaggery [cite: 211]</h4>
+            </div>
+            <div class="single-product-card">
+                <img src="cotton.jpg" alt="Cotton" onclick="openEnquiryModal('Cotton')">
+                <h4>Cotton [cite: 212]</h4>
+            </div>
+            <div class="single-product-card">
+                <img src="copra.jpg" alt="Copra Dry Coconut" onclick="openEnquiryModal('Copra Dry Coconut')">
+                <h4>Copra Dry Coconut [cite: 213]</h4>
+            </div>
+             <div class="single-product-card">
+                <img src="brown-sugar.jpg" alt="Brown Sugar" onclick="openEnquiryModal('Brown Sugar')">
+                <h4>Brown Sugar [cite: 214]</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="enquiryModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Product Enquiry</h2>
+            <form id="enquiry-form">
+                <div class="form-group"><label for="product-name">Product:</label><input type="text" id="product-name" readonly></div>
+                <div class="form-group"><label for="name">Your Name:</label><input type="text" id="name" required></div>
+                <div class="form-group"><label for="email">Your Email:</label><input type="email" id="email" required></div>
+                <div class="form-group"><label for="message">Message:</label><textarea id="message" rows="4" required></textarea></div>
+                <button type="submit" class="submit-btn">Send Enquiry</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> +91 9812312569</p>
+                <p><strong>Phone:</strong> +91 8683090656</p>
+                <p><strong>Email:</strong> shrijeetcorporation1@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
